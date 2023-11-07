@@ -1,3 +1,11 @@
+/***** Bases structurelles ******/
+
+.conteneur1200 {
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 .ligne {
     display:flex;
 }
@@ -6,11 +14,20 @@
     flex-basis:100%;
 }
 
+/***** Utilitaires *****/
 
-/* Mais à quoi ça sert tout ça ? */
+.hauteur-fenetre {
+    min-height:100vh;
+}
 
-/* ça sert pas à grand chose */
+/***** Responsive *****/
 
-/* Mais si ! */
+@media (max-width:600px) {
+
+    .ligne {
+        flex-direction:column;
+    }
+    
+}
 
 
